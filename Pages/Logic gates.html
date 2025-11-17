@@ -2,18 +2,59 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=home" />
 		<title>Logic gates</title>
 		<style>
-		ul {
-			display: flex;
-				justify-content: space-evenly;
-				flex-direction: row;
+			p {
+				font-family: "Luckiest Guy", cursive;
+				font-weight: 400;
+				font-style: normal;
+				color: #aad9f3;
+			}
+			ul {
 				list-style-type: none;
+				display: grid;
+				grid: 1fr 1fr/ 1fr 1fr;
+			}
+			h1, li {
+				font-family: "Metal Mania", system-ui;
+				font-weight: 400;
+				font-style: normal;
+				color: #aad9f3;
+			}
+			img {
+				width: 400px;
+				height: auto;
+			}
+			body {
+				background-color: #112A46;
+			}
+			span {
+				text-align: center;
+			}
+			a {
+				text-decoration: none;
+				color: #aad9f3;
+			}
+			div {
+				display: flex;
+				justify-content: space-between;
+			}
 		</style>
 	<head>
 	
 	<body>
-	<h1>Logic gates</h1>
+	<div>
+	<h1 class="top">Logic gates</h1>
+	<span class="material-symbols-outlined"><a href="../Main page.html">home</a></span>
+	</div>
 	<p>There are 5 types of logic gates:</p>
 	<ol>
 		<li>AND gate</li>
@@ -22,15 +63,15 @@
 		<li>XOR gate</li>
 		<li>NAND gate</li>
 	</ol>
-	<p>AND gate gives TRUE statement only if both inputs are TRUE.</p>
-	<p>OR gate gives TRUE statement if al least one input is TRUE.</p>
-	<p> NOT gate gives opposite from input statement. For example, if input is TRUE(or 1), then the output will be FALSE(or 0)</p>
-	<p>XOR gate gives TRUE output when only one input is TRUE. When both inputs are same, 0 0 or 1 1, it gives FALSE.</p>
-	<p>NAND gate is a mix of AND and OR gates. It acts opposite to AND gate: gives TRUE output in all cases, except when both inputs are TRUE.</p>
+	<p>--> AND gate gives TRUE statement only if both inputs are TRUE.</p>
+	<p>--> OR gate gives TRUE statement if al least one input is TRUE.</p>
+	<p>--> NOT gate gives opposite from input statement. For example, if input is TRUE(or 1), then the output will be FALSE(or 0).</p>
+	<p>--> XOR gate gives TRUE output when only one input is TRUE. When both inputs are same, 0 0 or 1 1, it gives FALSE.</p>
+	<p>--> NAND gate is a mix of AND and OR gates. It acts opposite to AND gate: gives TRUE output in all cases, except when both inputs are TRUE.</p>
 	<ul>
-		<li><img src="Logates.jpg" alt="picture of logic gates"></li>
-		<li><img src="NOT gate.webp" alt="picture of logic gates"></li>
-		<li><img src="XOR gate.jpg" alt="picture of logic gates"></li>
-		<li><img src="NAND gate.webp" alt="picture of logic gates"></li>
+		<li><img src="../assets/Logates.jpg" alt="picture of logic gates"></li>
+		<li><img src="../assets/NOT gate.webp" alt="picture of logic gates"></li>
+		<li><img src="../assets/XOR gate.jpg" alt="picture of logic gates"></li>
+		<li><img src="../assets/NAND gate.webp" alt="picture of logic gates"></li>
 	</ul>
 	</body>
