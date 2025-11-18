@@ -2,43 +2,79 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=home" />
 		<title>IC</title>
 		<style>
-		h1 {
-			text-align: center;
+			body {
+				background-color: #112A46;
 			}
-		li {
-			display: flex;
-			justify-content: space-evenly;
-				flex-direction: row;
+			h1, p, figcaption {
+				color: #aad9f3;
+			}
+			div {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			a {
+				text-decoration: none;
+				color: #aad9f3;
+				font-size: 50px;
+				margin-right: 20px;
+			}
+			h1 {
+				font-family: "Metal Mania", system-ui;
+				font-weight: 400;
+				font-style: normal;
+				margin-left: 20px;
+				font-size: 50px;
+			}
+			p, figcaption {
+				font-family: "Luckiest Guy", cursive;
+				font-weight: 400;
+				font-style: normal;
+				font-size: 25px;
+			}
+			ul {
 				list-style-type: none;
-				}
-		body {
-			background-color: #C0B3E3;
+			}
+			img {
+				width: 500px;
+				height: auto;
 			}
 		</style>
 	<head>
 	
 	<body>
+	<div>
 	<h1>IC</h1>
+	<span class="material-symbols-outlined"><a href="../Main page.html">home</a></span>
+	</div>
 	<p>IC - Integrated circuits. It has 14 legs, 2 for power(7th is for negative and 14th for positive) and groups of 3: 2 input and 1 output.</p>
 	<p>We start count of legs by placing the side with a small notch on the top. The first leg will be in the top left and the last one will be in te top right.</p>
 	<p>There are different versions of ICs. Some have AND gates, others, for example - XOR.</p>
 	<ul>
 		<li>
 			<figure>
-				<img src="AND IC.png" alt="What's inside of AND IC?">
 				<figcaption>
 					Here is the scheme of every input and output in IC:
 				</figcaption>
+				<img src="../assets/AND IC.png" alt="What's inside of AND IC?">
 			<figure>
 		</li>
 		<li>
 			<figure>
-				<img src="XOR IC.png" alt="What's inside of XOR IC?">
 				<figcaption>
 					Here is the scheme of every input and output in IC:
 				</figcaption>
+				<img src="../assets/XOR IC.png" alt="What's inside of XOR IC?">
 			<figure>
 		</li>
 	</ul>

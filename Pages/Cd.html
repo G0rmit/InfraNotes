@@ -2,23 +2,65 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=home" />
 		<title>Command bar</title>
 		<style>
-		h1 {
-			text-align: center;
+				body {
+				background-color: #112A46;
 			}
-		body {
-			background-color: #C0B3E3;
+			h1, p, li {
+				color: #aad9f3;
+			}
+			div {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			a {
+				text-decoration: none;
+				color: #aad9f3;
+				font-size: 50px;
+				margin-right: 20px;
+			}
+			h1 {
+				font-family: "Metal Mania", system-ui;
+				font-weight: 400;
+				font-style: normal;
+				margin-left: 20px;
+				font-size: 50px;
+			}
+			li {
+				font-family: "Luckiest Guy", cursive;
+				font-weight: 400;
+				font-style: normal;
+				font-size: 25px;
+				margin: 10px;
 			}
 		</style>
 	<head>
 	
 	<body>
-	<h1>Command bar(Git Bash) commands:</h1>
+	<div>
+	<h1>Command bar (Git Bash) commands:</h1>
+	<span class="material-symbols-outlined"><a href="../Main page.html">home</a></span>
+	</div>
 	<ul>
 		<li>mkdir - create a folder</li>
 		<li>touch name.txt - create a text file</li>
 		<li>cd/directory_name/ - go to directory </li>
 		<li>cd - return from directory</li>
+		<li>git init - create repo</li>
+		<li>git status - check documents before commit</li>
+		<li>git commit -m "Message" - commit (save) files with a message</li>
+		<li>git remote add origin "link to repo" - link local repo to could repo on github/gitlab</li>
+		<li>git push -u origin main/master - push (upload) files to the cloud to the branch main/master</li>
+		<li>git pull origin main/master - pull (download) files from the cloud to local storage/repo</li>s
 	</ul>
 	</body>
