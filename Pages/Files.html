@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=home" />
+		<title>Files</title>
+		<style>
+			body {
+				background-color: #112A46;
+			}
+			h1, p {
+				color: #aad9f3;
+			}
+			div {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			a {
+				text-decoration: none;
+				color: #aad9f3;
+				font-size: 50px;
+				margin-right: 20px;
+			}
+			h1 {
+				font-family: "Metal Mania", system-ui;
+				font-weight: 400;
+				font-style: normal;
+				margin-left: 20px;
+				font-size: 50px;
+			}
+			p {
+				font-family: "Luckiest Guy", cursive;
+				font-weight: 400;
+				font-style: normal;
+				font-size: 25px;
+			}
+			ul {
+				font-family: "Luckiest Guy", cursive;
+				font-weight: 400;
+				font-style: normal;
+				font-size: 25px;
+				color: yellow;
+			}
+			div:nth-of-type(2) {
+				display: flex;
+				justify-content: space-evenly;
+			}
+		</style>
+		</head>
+		<body>
+			<div>
+				<h1>File Management</h1>
+				<span class="material-symbols-outlined"><a href="../Main page.html">home</a></span>
+			</div>
+			<p>File system is an important part of OS, that helps locate and manage files, organize data with folders and track file meta data.</p>
+			<p>All data is converted to binary 1 and 0. Text characters each have their own code.</p>
+			<p>Sounds are more complicated, the encoding is done via "sampling". Microphones measure how much the air is displaced by the sound with diaphragm. However, there is a limit to how often samples can be done, which is called "sampling rate"</p>
+			<h1>Images</h1>
+			<p>There are two types of images:</p>
+			<ul>
+				<li>Vector image <p>Uses mathematical description of shapes, hence lines</p></li>
+				<li>Raster image <p>Uses pixels, that have colors thanks to RGB values(24 bits in each pixel).</p></li>
+			</ul>
+			<h1>Metadata</h1>
+			<p>Metadata is a data about data. It is divided in header, main ad footer. Header contains file type and metadata: size, date, author...</p>
+			<p>An important part of metadata is a "magic number". It is 8-digit code at the beginning of the file code that specifies file type.</p>
+			<h1>How File System Works?</h1>
+			<ul>
+				<li>When creating file:
+					<p>Assigns space on disk and records file metadata.</p>
+				</li>
+				<li>When opening file:
+					<p>Reads metadata to find file's location and loads file content into memory.</p>
+				</li>
+				<li>When deleting file:
+					<p>Marks disk space available andkeeps metadata for a short time.</p>
+				</li>
+			</ul>
+			<h1>File systems in different OS</h1>
+			<p>Windows uses NTFS and fat32(older), macOS uses APFS and HFS+APFS, Linux uses ext4, Btrfs and XFS.</p>
+			<h1>File Compression</h1>
+			<p>There are two types of compression: lossless(zip, png, gif, flac) and lossy(mp3, jpeg, mpeg). Lossy compression permanently deletes some pixels that are not visible to human eye in order to save more space.</p>
+			<p>There are different compresson algorithms. One of them is "Redundancy reduction" or "Run-Length Encoding", and another one is "Dictionnary based methods"</p>
+			<p>Redundancy reduction replaces consecutive repeated values with a single value and a count. Example: aaaaabbb turns into 5a3b.</p>
+			<p>Dictionary methods scans for repeated sequenses and stores each unique sequence in a dictionary with a short code.</p>
+			<div>
+			<img src="../Assets/comp1.png" alt="Example of how redundancy reduction works" width="400">
+			<br>
+			<img src="../Assets/comp2.png" alt="Example of how dictionary methods work" width="400">
+			</div>
+		</body>
+</html>

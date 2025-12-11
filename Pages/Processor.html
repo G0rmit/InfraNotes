@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=home" />
+		<title>Processor</title>
+		<style>
+			body {
+				background-color: #112A46;
+			}
+			h1, p {
+				color: #aad9f3;
+			}
+			div {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			a {
+				text-decoration: none;
+				color: #aad9f3;
+				font-size: 50px;
+				margin-right: 20px;
+			}
+			h1 {
+				font-family: "Metal Mania", system-ui;
+				font-weight: 400;
+				font-style: normal;
+				margin-left: 20px;
+				font-size: 50px;
+			}
+			p {
+				font-family: "Luckiest Guy", cursive;
+				font-weight: 400;
+				font-style: normal;
+				font-size: 25px;
+			}
+			ul {
+				font-family: "Luckiest Guy", cursive;
+				font-weight: 400;
+				font-style: normal;
+				font-size: 25px;
+				color: yellow;
+			}
+			img {
+				display: block;
+				margin: auto;
+			}
+		</style>
+		</head>
+		<body>
+			<div>
+				<h1>Processor</h1>
+				<span class="material-symbols-outlined"><a href="../Main page.html">home</a></span>
+			</div>
+			<p>Processor is a computer's brain, executing software instructions.</p>
+			<p>There are 4 main components in CPU:</p>
+			<ul>
+				<li>Control Unit, who orchestrates operations, but doesn't perform any calculations.</li>
+				<li>Arithmetic Logic Unit, who handles arithmetics and logical operations.</li>
+				<li>Registers who act as a storage for instructions and data.</li>
+				<li>Main Memory Unit who is used as a temporary storage for materials that CPU will be using.</li>
+			</ul>
+			<h1>Instruction Cycle</h1>
+			<p>3 main stages: Fetch instructions from memory, decode them, and execte operation with storing results in registers</p>
+			<img src="../Assets/cpuCycle.png" alt="stages of CPU cycle" width="400">
+			<h1>Processor Speed</h1>
+			<p>Processor speeds are measured in gigahertz (GHz) with modern CPUs operating at speed near 5GHz.</p>
+			<p>Hertz is a clock cycle per second, meaning that 1GHz equals 1 billion cycles.</p>
+			<h1>Multi-Core CPU</h1>
+			<p>CPUs with multicores use 2+ cores(cpu) on a single chip, which enhances it's performance. Common variants are dual-core(2), quad-core(4), and up to hexadeca-core(16).</p>
+			<h1>Cache</h1>
+			<p>Cache is a fast memory for data that is going to be used by CPU.</p>
+			<p>There are 3 levels of cache:</p>
+			<ul>
+				<li>L1, the fastest</li>
+				<li>L2, medium</li>
+				<li>L3, the biggest and slowest</li>
+			</ul>
+			<p>There is also a LLC, last level cache, that is chared between all cores for data acess. The memory controller manages all data transfers between CPUs.</p>
+			<h1>Pipelining</h1>
+			<p>Pipelining is a technique when multiple instructions can be processed at the same time, which saves time and improves performace.</p>
+			<h1>CPU cooling</h1>
+			<p>CPU generates heat due to multiple processes running a the same time, and this factor requires cooling. There are several methods for cooling: air cooling, liquid cooling, passive cooling (heat sinks).</p>
+			<h1>GPU</h1>
+			<p>GPU is a specialized processor designed for work with graphics and paralle computations. Today they are used for renderin and work with AI.</p>
+			<h1>Integrated vs Discrete</h1>
+			<p>Integrated GPUs are built into CPU. They are cheaper but less effective. Discrete ones, on the other hand, are separate, offer more performance but mur expensive.</p>
+		</body>
+</html>
